@@ -18,7 +18,7 @@ sudo rm -rf
 ```
 
 
-```python
+```py
 
 x = 4
 x = x + 1

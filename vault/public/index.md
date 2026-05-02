@@ -1,21 +1,32 @@
 
-# New Header 1
+---
+title: Welcome to Kiarash's Digital Garden
+date: 2026-05-02
+tags: [welcome, home]
+---
 
-### New Header 2
+# Welcome to My Digital Garden 🌱
 
-#### New Header 4
+Hello! This is my personal blog and digital garden where I share thoughts, learnings, and insights on various topics.
 
-Hello
+## What You'll Find Here
 
-> quote sample 1
+- **Technical Notes**: Programming insights, tools, and discoveries
+- **Learning Logs**: Documentation of my learning journey
+- **Projects**: Things I'm working on and building
+- **Reflections**: Thoughts on technology, productivity, and life
 
+## Getting Started
 
+Feel free to explore using the search function or browse through the file explorer on the left. You can also check out the graph view to see how topics connect.
 
-```sh
+## Recent Updates
 
-sudo rm -rf
+This space is continuously evolving as I add new content and refine existing notes. Thanks for visiting!
 
-```
+---
+
+*This site is built with [Quartz](https://quartz.jzhao.xyz/) and hosted on GitHub Pages.*
 
 
 ```py

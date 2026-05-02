@@ -7,9 +7,9 @@
 
 Hello
 
-> quote sample 1
-
-
+Non quote text.
+> quote sample 1 [index.md](./index.md).
+ 
 
 ```sh
 
@@ -17,6 +17,8 @@ sudo rm -rf
 
 ```
 
+- This is python code.
+- lorem ipsum.
 
 ```py
 

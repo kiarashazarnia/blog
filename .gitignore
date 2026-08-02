@@ -1,3 +1,4 @@
+
 books/*
 drafts/*
 # OS
@@ -12,6 +13,7 @@ desktop.ini
 vault/.obsidian/workspace.json
 vault/.obsidian/workspace-mobile.json
 vault/.trash/
+vault/public/*
 
 # Quartz & Node
 quartz/node_modules/

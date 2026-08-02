@@ -9,7 +9,7 @@ description: A simple but rigorous tour of five common types of performance test
 ---
 
 > [!note]- AI Usage Disclosure
-> This post was originally written and published on [Medium on Nov 25, 2021](https://medium.com/@kiarashazarnia/types-of-software-performance-testing-35a190af52ed), without AI. It has since been polished and extended with AI assistance (including the scalability test section), and a few technical mistakes were fixed along the way.
+> This post was originally written and published on [Medium on Nov 25, 2021](https://medium.com/@kiarashazarnia/types-of-software-performance-testing-35a190af52ed), without any AI. It has since been polished and extended with AI assistance (including the scalability test section), and a few technical mistakes were fixed along the way.
 
 Performance testing is one of the most important and common types of non-functional software testing. As you know, performance is a quality attribute and does not have a well-defined scenario and acceptance criteria like the usual functional requirements — and exactly that is the root of the challenge. So it is critical to have a concise understanding of the different performance testing approaches to design and set up a beneficial performance testing solution.
 

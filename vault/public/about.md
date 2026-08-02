@@ -4,6 +4,10 @@ date: 2026-08-02
 tags:
   - personal
 ---
+
+> [!note]- AI Usage Disclosure
+> AI helped me fix grammar and improve the wording of this page.
+
 Hi there!
 This is Kiarash Azarnia. I'm a software engineer with about a decade of experience *(at the time of writing this note)*, and if there is a single thread running through everything I do, it's this: **I like to go to the roots of concepts and problems.** Not just fix what is broken, I really enjoy understanding why it broke, what shaped it, and what the system around it is really doing. This is the story of how that mindset formed.
 
@@ -50,6 +54,3 @@ Notes and essays on engineering, career, strategy, reliability, complex systems,
 - **GitHub** — [@kiarashazarnia](https://github.com/kiarashazarnia)
 - **LinkedIn** — [kiarashazarnia](https://www.linkedin.com/in/kiarashazarnia/)
 - **X (Twitter)** — [kiarashazarnia](https://x.com/kiarashazarnia)
-
-> [!note]- AI Usage Disclosure
-> AI helped me fix grammar and improve the wording of this page.

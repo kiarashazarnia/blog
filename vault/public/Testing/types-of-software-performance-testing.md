@@ -8,6 +8,9 @@ tags:
 description: A simple but rigorous tour of five common types of performance testing — load, stress, spike, endurance, and scalability — and what a good test report looks like for each.
 ---
 
+> [!note]- AI Usage Disclosure
+> This post was originally written and published on [Medium on Nov 25, 2021](https://medium.com/@kiarashazarnia/types-of-software-performance-testing-35a190af52ed), without AI. It has since been polished and extended with AI assistance (including the scalability test section), and a few technical mistakes were fixed along the way.
+
 Performance testing is one of the most important and common types of non-functional software testing. As you know, performance is a quality attribute and does not have a well-defined scenario and acceptance criteria like the usual functional requirements — and exactly that is the root of the challenge. So it is critical to have a concise understanding of the different performance testing approaches to design and set up a beneficial performance testing solution.
 
 If you google the topic, you will find some articles with the same title, but I could not find one that was simple and rigorous at the same time, so I decided to write one. Long story short, the conventional types of performance testing are:
@@ -203,6 +206,3 @@ This is not an academic article, so excuse me for not respecting conventional re
 - [HdrHistogram](https://github.com/HdrHistogram/HdrHistogram): high-resolution latency recording
 - *Test Automation in DevOps*: an informative course
 - *A Survey on Load Testing of Large-Scale Software Systems*
-
-> [!note]- AI Usage Disclosure
-> This post was originally written and published on Medium on Nov 25, 2021, without AI. It has since been polished and extended with AI assistance (including the scalability test section), and a few technical mistakes were fixed along the way.

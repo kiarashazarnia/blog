@@ -1,11 +1,12 @@
 # Agent Guideline
 
-This repository contains **`/root/cause`**, a personal blog.
+This repository contains **`/root/cause`**, Kiarash's personal blog.
+
 ## Structure
-1. `/vault/`: The source of truth for all content. Managed via the Obsidian app.
+1. `/vault/`: The source of truth for all content. Managed via the Obsidian app by Kiarash.
 2. `/quartz/`: A git fork of the official Quartz repository. This handles building the static HTML from vault markdowns. 
-3. `/scripts/`: One-command wrapper scripts for all local build/serve tasks (see "Local Tooling").
-4. The site is automatically built and deployed via GitHub Actions when code is pushed to the master (or main) branch.
+3. `/scripts/`: One-command, mostly AI-Generated wrapper scripts for all local build/serve tasks (see "Local Tooling").
+4. The site is automatically built and deployed via GitHub Actions when code is pushed to the master (or main) branch. 
 
 ## Content Creation & Obsidian Vault
 When assisting with writing, summarizing, or formatting notes, adhere to the following:
@@ -20,9 +21,18 @@ When assisting with writing, summarizing, or formatting notes, adhere to the fol
   date: YYYY-MM-DD
   tags: [tag1, tag2]
   ---
-* **Tags:** Do NOT introduce new tags without asking the user first. Current tags: reliability, performance, testing, personal (for personal-styled notes, listable via `/tags/personal`)
+* **Tags:** Do NOT introduce new tags without asking the user first. Current tags: 
+- Reliability 
+- Performance 
+- Testing
+- Personal
+- Idea
+- Systems Thinking
+- Complex Systems
+- Strategy
+
 ## Quartz Fork Maintenance (MINIMAL CHANGES)
-Because the quartz/ folder is a fork that requires upstream updates, changes here must be kept to an absolute minimum to avoid merge conflicts.
+Because the quartz/ folder is a fork that requires upstream updates, changes here must be kept to an **absolute minimum** to avoid merge conflicts.
 
 - Core Rule: NEVER modify files inside quartz/components/, quartz/plugins/, or quartz/util/ unless explicitly requested by the user.
 - Configuration: Limit behavioral and layout changes strictly to quartz/quartz.config.ts and quartz/quartz.layout.ts.

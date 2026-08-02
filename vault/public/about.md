@@ -50,3 +50,6 @@ Notes and essays on engineering, career, strategy, reliability, complex systems,
 - **GitHub** — [@kiarashazarnia](https://github.com/kiarashazarnia)
 - **LinkedIn** — [kiarashazarnia](https://www.linkedin.com/in/kiarashazarnia/)
 - **X (Twitter)** — [kiarashazarnia](https://x.com/kiarashazarnia)
+
+> [!note]- AI Usage Disclosure
+> AI helped me fix grammar and improve the wording of this page.

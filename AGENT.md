@@ -30,6 +30,12 @@ When assisting with writing, summarizing, or formatting notes, adhere to the fol
 - Systems Thinking
 - Complex Systems
 - Strategy
+* **AI Usage Disclosure:** ALWAYS add a foldable AI disclaimer callout at the end of every blog post you create or AI-assist on, with a line or two describing how AI was used. It MUST be folded (collapsed) by default — note the `-` after the callout type:
+  ```markdown
+  > [!note]- AI Usage Disclosure
+  > One or two lines on how AI was used (e.g. polishing, grammar fixes, technical corrections).
+  ```
+  If AI was not involved in a post at all, skip the disclaimer.
 
 ## Quartz Fork Maintenance (MINIMAL CHANGES)
 Because the quartz/ folder is a fork that requires upstream updates, changes here must be kept to an **absolute minimum** to avoid merge conflicts.

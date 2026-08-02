@@ -176,3 +176,6 @@ This is not an academic article, so excuse me for not respecting conventional re
 - [HdrHistogram](https://github.com/HdrHistogram/HdrHistogram): high-resolution latency recording
 - *Test Automation in DevOps*: an informative course
 - *A Survey on Load Testing of Large-Scale Software Systems*
+
+> [!note]- AI Usage Disclosure
+> This post was originally written and published on Medium on Nov 25, 2021, without AI. It has since been polished with AI assistance, and a few technical mistakes were fixed along the way.

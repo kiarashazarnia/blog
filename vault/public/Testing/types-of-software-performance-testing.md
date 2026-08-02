@@ -5,7 +5,7 @@ tags:
   - performance
   - testing
   - reliability
-description: A simple but rigorous tour of the four most common types of performance testing — load, stress, spike, and endurance — and what a good test report looks like for each.
+description: A simple but rigorous tour of five common types of performance testing — load, stress, spike, endurance, and scalability — and what a good test report looks like for each.
 ---
 
 Performance testing is one of the most important and common types of non-functional software testing. As you know, performance is a quality attribute and does not have a well-defined scenario and acceptance criteria like the usual functional requirements — and exactly that is the root of the challenge. So it is critical to have a concise understanding of the different performance testing approaches to design and set up a beneficial performance testing solution.
@@ -16,6 +16,7 @@ If you google the topic, you will find some articles with the same title, but I 
 - **Stress test**
 - **Spike test**
 - **Endurance test**
+- **Scalability test**
 
 ## What is the designed load?
 
@@ -156,6 +157,30 @@ xychart-beta
 
 The load is flat on purpose — the point is to watch metrics *drift* over time while the input stays constant. Track the things that should be stable: heap and off-heap memory, open file descriptors and database connections, GC pause frequency, and — most importantly — p99 latency creep. A system that holds 100 TPS at 120ms p99 for the first hour but drifts to 250ms by hour twelve has a leak, even if no single request looks catastrophic. The endurance test is what catches it.
 
+## Scalability test
+
+**A scalability test measures how the system's performance changes when its capacity changes — whether adding resources actually buys proportional performance.**
+
+The four test types above vary the *load* against a fixed deployment; the scalability test varies the *deployment* itself. The typical setup is scale-out: apply the same per-node load against 1, 2, 4, and 8 instances of the service and watch how the total achieved throughput grows. The same idea applies to scale-up: double the CPU and memory of a single node and measure again.
+
+The reference is *linear scaling*: if one node serves the designed load of 100 TPS, two nodes should serve 200 TPS, four nodes 400 TPS. Reality always falls short — every system has a serial fraction (a shared database, a single leader, lock contention) and a coordination cost (cache coherence, consensus, load balancing) that grows with the number of nodes. Two classic laws describe exactly this:
+
+- **Amdahl's Law** bounds the speedup by the serial fraction of the workload: if 5% of the work cannot be parallelized, no amount of hardware takes you past a 20× speedup.
+- **The Universal Scalability Law** (Neil Gunther) goes further and adds a *coherency* penalty term, which is why the throughput of many real systems not only flattens but actually *degrades* past a certain scale.
+
+So the scalability test report plots achieved throughput against capacity, next to the ideal linear line. For our considered system:
+
+```mermaid
+xychart-beta
+    title "Scale-out Test: Ideal vs. Achieved Throughput"
+    x-axis ["1 node", "2 nodes", "4 nodes", "8 nodes"]
+    y-axis "TPS" 0 --> 900
+    bar [100, 200, 400, 800]
+    line [100, 190, 340, 560]
+```
+
+The bars are ideal linear scaling; the line is what the system actually achieves. Reading the gap as *scaling efficiency* — achieved divided by ideal — gives 100%, 95%, 85%, and 70% at each step: every doubling of capacity buys less than the previous one. That curve is the real deliverable of the test. It tells you where scaling stops being cost-effective, and it points at the bottleneck to remove next — in this system, something shared starts to dominate beyond four nodes, and capacity money is better spent there than on more instances.
+
 ## Conclusion
 
 It is challenging to recognize and represent the system's performance requirements, especially while the test plan totally depends on them. But if you are involved in developing performance-critical software, do not hesitate to set up a performance testing solution. Although there are lots of tools, frameworks, and technical details, it is always inspiring to start with a sketch test plan and a simple tool like k6. Then criticize your solution and debate it with your teammates — you will end up with a powerful and valuable solution by the magic of continuous improvement.
@@ -164,7 +189,7 @@ One last caveat: a test is only as honest as its environment. Results from an em
 
 ## Final note
 
-There are more performance testing types — micro-benchmarking, volume testing, scalability testing, capacity testing, and so on — of which some are outside the scope of this article, which focuses on the most common types, and some are other representations of the ones explained here. Peak testing, for instance, is another name for spike testing. The terminology in this field is inconsistent, partly because it grew up inside engineering teams rather than from a single academic tradition — so expect to see the same idea under different names, and don't let the naming distract you from the underlying behavior being probed.
+There are more performance testing types — micro-benchmarking, volume testing, capacity testing, and so on — of which some are outside the scope of this article, which focuses on the most common types, and some are other representations of the ones explained here. Peak testing, for instance, is another name for spike testing. The terminology in this field is inconsistent, partly because it grew up inside engineering teams rather than from a single academic tradition — so expect to see the same idea under different names, and don't let the naming distract you from the underlying behavior being probed.
 
 ## References and beneficial links
 
@@ -172,10 +197,12 @@ This is not an academic article, so excuse me for not respecting conventional re
 
 - Gil Tene's talk: *How NOT to Measure Latency*
 - A good book: *The Art of Application Performance Testing*
+- *Guerrilla Capacity Planning* by Neil Gunther: the Universal Scalability Law and capacity planning in depth
+- *Systems Performance* by Brendan Gregg: includes a clear treatment of Amdahl's Law and the Universal Scalability Law
 - [k6](https://k6.io): a performance testing tool
 - [HdrHistogram](https://github.com/HdrHistogram/HdrHistogram): high-resolution latency recording
 - *Test Automation in DevOps*: an informative course
 - *A Survey on Load Testing of Large-Scale Software Systems*
 
 > [!note]- AI Usage Disclosure
-> This post was originally written and published on Medium on Nov 25, 2021, without AI. It has since been polished with AI assistance, and a few technical mistakes were fixed along the way.
+> This post was originally written and published on Medium on Nov 25, 2021, without AI. It has since been polished and extended with AI assistance (including the scalability test section), and a few technical mistakes were fixed along the way.

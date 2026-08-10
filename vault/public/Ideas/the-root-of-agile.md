@@ -9,6 +9,9 @@ version: 0.0.0-beta
 description: Agile's root is not scrum ceremonies or a new bicycle every sprint. It is Drucker's knowledge worker finally getting authority over planning, process, and team shape — and under that definition, classical tools chosen by an autonomous team are agile, while imposed ceremonies are not.
 ---
 
+> [!note]- AI Usage Disclosure
+> The thesis and every opinion here are mine. AI helped me gather and verify the references, and articulate my thoughts into structured, polished prose.
+
 Most teams I have seen practice agile as an inventory of ceremonies: daily standups, two-week sprints, story points, a board with columns, and Henrik Kniberg's famous sketch — the skateboard, the scooter, the bicycle, the motorcycle, the car — where every sprint must end with a slightly better vehicle.
 
 This is the shallow take. Here is mine:
@@ -78,6 +81,3 @@ This is not an academic article, so excuse me for not respecting conventional re
 - Frederick Taylor, *The Principles of Scientific Management* (1911)
 - The [Agile Manifesto](https://agilemanifesto.org) and its twelve principles (2001)
 - Henrik Kniberg, [Making sense of MVP](https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp) (2016)
-
-> [!note]- AI Usage Disclosure
-> The thesis and every opinion here are mine. AI helped me gather and verify the references, and articulate my thoughts into structured, polished prose.

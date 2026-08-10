@@ -25,14 +25,17 @@ When assisting with writing, summarizing, or formatting notes, adhere to the fol
   tags: [tag1, tag2]
   ---
 * **Tags:** Do NOT introduce new tags without asking the user first. Current tags: 
-- Reliability 
-- Performance 
-- Testing
-- Personal
-- Idea
-- Systems Thinking
-- Complex Systems
-- Strategy
+- reliability 
+- performance 
+- testing
+- personal
+- idea
+- systems-thinking
+- complex-systems
+- strategy
+- thinking-out-loud
+- safety-engineering
+
 * **AI Usage Disclosure:** ALWAYS add a foldable AI disclaimer callout at the end of every blog post you create or AI-assist on, with a line or two describing how AI was used. It MUST be folded (collapsed) by default — note the `-` after the callout type:
   ```markdown
   > [!note]- AI Usage Disclosure

@@ -8,6 +8,9 @@ This repository contains **`/root/cause`**, Kiarash's personal blog.
 3. `/scripts/`: One-command, mostly AI-Generated wrapper scripts for all local build/serve tasks (see "Local Tooling").
 4. The site is automatically built and deployed via GitHub Actions when code is pushed to the master (or main) branch. 
 
+## Principles
+- **Minimalism is the virtue.** Every word, line, and feature must earn its place. Cut ruthlessly.
+
 ## Content Creation & Obsidian Vault
 When assisting with writing, summarizing, or formatting notes, adhere to the following:
 * **Write location:** ALL public-facing content MUST be created or edited inside `vault/public/`. Never write directly to `quartz/content/`.
@@ -36,6 +39,8 @@ When assisting with writing, summarizing, or formatting notes, adhere to the fol
   > One or two lines on how AI was used (e.g. polishing, grammar fixes, technical corrections).
   ```
   If AI was not involved in a post at all, skip the disclaimer.
+* **Anti-Plagiarism:** When reviewing content, if a claim, idea, or passage appears to originate from literature, academic work, or established blog posts, **warn Kiarash** and suggest adding a proper reference or quote. We must cite as much as possible.
+* **Version Badge:** Add a `version` field to the frontmatter of posts (e.g. `version: 1`). Use it to signal post maturity or iteration.
 
 ## Quartz Fork Maintenance (MINIMAL CHANGES)
 Because the quartz/ folder is a fork that requires upstream updates, changes here must be kept to an **absolute minimum** to avoid merge conflicts.

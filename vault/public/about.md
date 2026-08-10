@@ -3,6 +3,7 @@ title: About Me
 date: 2026-08-02
 tags:
   - personal
+version: 1.0.0-beta
 ---
 
 > [!note]- AI Usage Disclosure

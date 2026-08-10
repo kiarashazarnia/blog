@@ -6,6 +6,7 @@ tags:
   - testing
   - reliability
 description: A simple but rigorous tour of five common types of performance testing — load, stress, spike, endurance, and scalability — and what a good test report looks like for each.
+version: 1.0.0
 ---
 
 > [!note]- AI Usage Disclosure

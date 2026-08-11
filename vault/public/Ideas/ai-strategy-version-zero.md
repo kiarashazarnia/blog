@@ -35,7 +35,7 @@ The team-level research points the same way: across 106 experiments, [Vaccaro, A
 
 ## Guiding policy
 
-Four policies.
+Six policies.
 
 **1. Hold the strategy itself loosely — re-baseline on a cadence.**
 
@@ -65,6 +65,14 @@ This is the same authority-responsibility pairing I wrote about in [[the-root-of
 
 Someone on your team is burning a large token budget. Are they about to win big for the business, or wasting money? The token count cannot tell you. Neither can the commit count — writing code is not shipping code. DORA has a name for the leaderboard instinct — [tokenmaxxing](https://dora.dev/insights/finding-balance-in-the-era-of-tokenmaxxing/) — and it produces exactly the wrong behavior. The review question is about outcomes: what shipped, what was learned, what the spend bought. Case by case, with feedback, not blanket limits and not blanket judgment. It is the same posture as [[estimation-prediction-or-budgeting]]: a budget conversation, honestly held. Judgment over metering.
 
+**5. Keep the stack multi-solution.**
+
+No vendor lock at any level. At the developer level, different models excel at different tasks — let people use what works. At the team level, risk tiering (policy 2) already implies different models for different tiers. At the organizational level, regulatory requirements may demand in-house or on-premise models for sensitive work. At the company level, strategic independence matters — engineering capacity gated by one provider's pricing, availability, or policy changes is a single point of failure. The architecture should support swapping models, mixing providers, and running local models where the situation calls for it. This is not hedging; it is treating AI tooling the way you would treat any infrastructure dependency you cannot afford to lose.
+
+**6. Back to origins — fundamentals are now economically achievable.**
+
+For decades the industry knew what good engineering looked like: TDD, BDD, thorough test coverage, strong typing, living documentation. The practices were right; the cost was too high. Writing tests, writing specs, writing docs — the mechanical effort was enough that teams routinely skipped it. Now AI collapses that mechanical cost. Matt Pocock [makes the case](https://youtu.be/v4F1gFy-hqg)[^7] plainly: software fundamentals matter more than ever, because the tools that make them affordable have arrived. This might be the golden age of software engineering — not because AI writes the code, but because the practices we always knew were right are now cheap enough to do at scale. The bottleneck was never that these practices didn't work. It was that they cost too much. That bottleneck is dissolving. The policy implication is direct: if your team skipped TDD because it was too slow, try it now. If BDD specs were too expensive to write, they are not anymore. Invest in the fundamentals — they just went on sale.
+
 ## Coherent action
 
 Policies without actions are wishes. The actions I think follow:
@@ -74,6 +82,8 @@ Policies without actions are wishes. The actions I think follow:
 - **Invest in fluency, person by person.** AI fluency varies wildly across any org, and it spreads through pairing and mentorship, not through documents. Larson's [adoption experience at Imprint](https://lethain.com/company-ai-adoption/): treat non-adopters as rational, pave the path, and have senior people lead from the front.
 - **Hire and grow systems thinkers.** Netflix CPTO Elizabeth Stone [says systems thinking is now the most important skill she hires for](https://www.lennysnewsletter.com/p/netflix-cpto-on-ai-and-the-future) — generalists for the big wins, with deep specialists still essential for bringing systems up and understanding them when they break. The amplifier diagnosis predicts exactly this: judgment about the whole system is the scarce resource.
 - **Review AI spend by outcome, quarterly.** No usage leaderboards. Outcome reviews, in the budget-negotiation sense: what did this spend buy, and should we buy more of it?
+- **Abstract the model layer.** Ensure the tooling stack supports swapping models without rewriting workflows. One team, one vendor is a single point of failure — audit where you are locked and plan the exit before you need it.
+- **Pilot a fundamentals revival.** Pick one project where TDD or BDD was skipped for cost reasons. Try it now with AI-assisted test and spec generation. Measure the difference — coverage, defect rate, confidence. If the fundamentals just went on sale, prove it on your own codebase.
 
 ## A confession, and a note on this version
 
@@ -98,6 +108,7 @@ This is not an academic article, so excuse me for not respecting conventional re
 13. The cost side: [Gartner's abandonment prediction](https://techcrunch.com/2024/07/31/this-week-in-ai-companies-are-growing-skeptical-of-ais-roi/), [Cursor's repricing](https://techcrunch.com/2025/07/07/cursor-apologizes-for-unclear-pricing-changes-that-upset-users/), [codegen margins](https://techcrunch.com/2025/08/07/the-high-costs-and-thin-margins-threatening-ai-coding-startups/), [ChatGPT Pro losses](https://techcrunch.com/2025/01/05/openai-is-losing-money-on-its-pricey-chatgpt-pro-plan-ceo-sam-altman-says/)
 14. The counter-poles worth reading: Steve Yegge, [The Continuous Thunderdome](https://yegge.ai/essays/the-shape-of-things-to-come/); Geoffrey Huntley, [everything is a ralph loop](https://ghuntley.com/loop/)
 15. Also: Kent Beck, [Augmented Coding: Beyond the Vibes](https://tidyfirst.substack.com/p/augmented-coding-beyond-the-vibes); Simon Willison, [How I use LLMs to help me write code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/); Addy Osmani, [The 70% problem](https://addyo.substack.com/p/the-70-problem-hard-truths-about)
+16. Matt Pocock, [Software Fundamentals Matter More Than Ever](https://youtu.be/v4F1gFy-hqg) — the case for TDD, BDD, and fundamentals as AI makes them affordable
 
 [^1]: Richard Rumelt, *Good Strategy, Bad Strategy* (2011). Will Larson operationalizes the kernel in [*Crafting Engineering Strategy*](https://craftingengstrategy.com/).
 [^2]: DORA, [*Accelerate State of DevOps Report*](https://dora.dev/research/2025/dora-report/) (2025). See also the [2024 report](https://dora.dev/research/2024/dora-report/).
@@ -105,3 +116,4 @@ This is not an academic article, so excuse me for not respecting conventional re
 [^4]: METR, [*Measuring the impact of early-2025 AI on experienced open-source developer productivity*](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) (2025). See also the [2026 follow-up](https://metr.org/blog/2026-02-24-uplift-update/).
 [^5]: Birgitta Böckeler, [*To vibe or not to vibe*](https://martinfowler.com/articles/exploring-gen-ai/to-vibe-or-not-vibe.html), part of the [Exploring Generative AI](https://martinfowler.com/articles/exploring-gen-ai.html) series on martinfowler.com.
 [^6]: Will Larson, [*The agentic passive voice*](https://lethain.com/agentic-passive-voice/) (2025).
+[^7]: Matt Pocock, [*Software Fundamentals Matter More Than Ever*](https://youtu.be/v4F1gFy-hqg).

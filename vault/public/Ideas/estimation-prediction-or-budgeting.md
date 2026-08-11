@@ -11,7 +11,7 @@ description: Software teams argue about estimation in two camps — estimate bet
 ---
 
 > [!note]- AI Usage Disclosure
-> AI helped structure and polish the prose. All opinions, observations, and experiences are mine.
+> AI helped structure and polish the prose. All opinions are mine.
 
 Every software team I have been part of has had the same argument about estimation. One camp says we need to get better at it — calibrate story points, track velocity, improve forecasting accuracy. The other camp says estimation is waste — abolish story points, count throughput, let the work speak for itself. Both camps are half right, and both miss the question that actually matters: what kind of work are we doing?
 

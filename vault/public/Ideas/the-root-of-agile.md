@@ -2,7 +2,6 @@
 title: "The Root of Agile: Autonomy for the Knowledge Worker"
 date: 2026-08-10
 tags:
-  - idea
   - systems-thinking
   - thinking-out-loud
 version: 0.0.0-beta

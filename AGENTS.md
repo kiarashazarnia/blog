@@ -29,9 +29,8 @@ When assisting with writing, summarizing, or formatting notes, adhere to the fol
 - performance 
 - testing
 - personal
-- idea
 - systems-thinking
-- complex-systems
+- complexity-science
 - strategy
 - thinking-out-loud
 - safety-engineering

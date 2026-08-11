@@ -7,7 +7,7 @@ tags:
   - complex-systems
   - strategy
 version: 0.0.0-beta
-description: Software teams argue about estimation in two camps — estimate better or abolish it entirely. Complexity science suggests both miss the deeper question: the domain determines whether prediction is even possible, and the domain depends entirely on what kind of work your team actually does.
+description: "Software teams argue about estimation in two camps — estimate better or abolish it entirely. Complexity science suggests both miss the deeper question: the domain determines whether prediction is even possible, and the domain depends entirely on what kind of work your team actually does."
 ---
 
 > [!note]- AI Usage Disclosure

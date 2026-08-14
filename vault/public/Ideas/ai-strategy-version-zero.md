@@ -4,7 +4,7 @@ date: 2026-08-11
 tags:
   - strategy
   - systems-thinking
-version: 0.3.0-beta
+version: 0.3.1-beta
 description: "My current thinking on AI adoption in engineering organizations: what I see happening, the directions I keep returning to, and what I'd consider trying. Shared as version zero, as part of my own learning process."
 ---
 
@@ -108,7 +108,7 @@ Version zero, honestly labeled. The diagnosis rests on public data I trust. The 
 
 ## Further reading
 
-Works that shaped this argument but are not cited above:
+These didn't shape the article directly, and I couldn't quote them cleanly, but they inspired my thinking while writing it. Shared for future learning:
 
 - Geoffrey Huntley, [everything is a ralph loop](https://ghuntley.com/loop/)
 - Kent Beck, [Augmented Coding: Beyond the Vibes](https://tidyfirst.substack.com/p/augmented-coding-beyond-the-vibes)

@@ -24,7 +24,7 @@ When assisting with writing, summarizing, or formatting notes, adhere to the fol
   - **News and blog evidence**: link the claim inline; no footnote.
   - **Inter-references**: link sections to each other with same-page heading wikilinks: `[[#Heading|display text]]`.
   - Footnotes also carry asides: context that would interrupt the prose.
-  - "Further reading" lists only works *not* cited anywhere in the post; cited sources live in footnotes and are never duplicated there.
+  - Cited sources live in footnotes and are never duplicated elsewhere. A closing "Further reading" section lists only works not cited anywhere in the post: things that inspired the writing without shaping it directly or being cleanly quotable.
 * **Frontmatter:** All published notes should ideally have valid YAML frontmatter at the top.
   ```yaml
   ---

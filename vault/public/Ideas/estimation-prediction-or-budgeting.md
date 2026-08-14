@@ -5,7 +5,7 @@ tags:
   - systems-thinking
   - complexity-science
   - thinking-out-loud
-version: 0.0.0-beta
+version: 0.0.1-beta
 description: "Software teams argue about estimation in two camps — estimate better or abolish it entirely. Complexity science suggests both miss the deeper question: the domain determines whether prediction is even possible, and the domain depends entirely on what kind of work your team actually does."
 ---
 
@@ -53,9 +53,9 @@ When an engineer says "this is eight story points," what they are really doing i
 
 The engineer who treats the estimate as a shared budget for tradeoff decisions — scope, quality, timing, technical debt — is more useful than the one who pretends to predict. The conversation shifts from "will you hit the date?" to "given this budget, what can we learn, and what can we ship?"
 
-## #NoEstimates goes too far
+## NoEstimates goes too far
 
-The **#NoEstimates** movement[^2] correctly identifies the problem: story points are routinely misused as predictions, velocity becomes a performance metric, and estimation ceremonies consume time that could be spent building. The diagnosis is right.
+The **NoEstimates** movement[^2] correctly identifies the problem: story points are routinely misused as predictions, velocity becomes a performance metric, and estimation ceremonies consume time that could be spent building. The diagnosis is right.
 
 The prescription — abolish estimation entirely — goes too far. Business needs budgets. Executives need to allocate resources across competing opportunities. Engineers who refuse to engage in that conversation do not escape the negotiation; they lose influence over it. The tradeoffs — scope, quality, technical debt, time-to-market — get made without them.
 
@@ -82,17 +82,17 @@ This connects to something I wrote about in [[the-root-of-agile]]. Drucker's kno
 
 ## A note on this version
 
-This is a beta. The Cynefin framing is settled in my head; the sourcing and the #NoEstimates counterargument need tightening. For v1 I want to add concrete examples of budget-negotiation conversations that worked, and sharpen the technical debt section with real numbers. Corrections and counterarguments are welcome.
+This is a beta. The Cynefin framing is settled in my head; the sourcing and the NoEstimates counterargument need tightening. For v1 I want to add concrete examples of budget-negotiation conversations that worked, and sharpen the technical debt section with real numbers. Corrections and counterarguments are welcome.
 
 ## Further reading
 
 This is not an academic article, so excuse me for not respecting conventional referencing formats. The sources cited above, plus additional reading that informed this argument:
 
 1. Dave Snowden, [Cynefin framework](https://thecynefinframework.com/) — the domain model at the center of this argument
-2. Vasco Duarte, *#NoEstimates: How to Measure Project Progress Without Estimating It* — the movement's most visible argument
+2. Vasco Duarte, *NoEstimates: How to Measure Project Progress Without Estimating It* — the movement's most visible argument
 3. Ward Cunningham, [The WyCash Portfolio Management System](https://c2.com/doc/oopsla92/paper.pdf) (1992) — where "technical debt" was coined
 4. Henrik Kniberg, [Making sense of MVP](https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp) (2016)
 
 [^1]: Dave Snowden and Mary Boone, "A Leader's Framework for Decision Making," *Harvard Business Review* (2007). See also [thecynefinframework.com](https://thecynefinframework.com/).
-[^2]: Vasco Duarte, #NoEstimates: How to Measure Project Progress Without Estimating It (2016).
+[^2]: Vasco Duarte, NoEstimates: How to Measure Project Progress Without Estimating It (2016).
 [^3]: Ward Cunningham, "The WyCash Portfolio Management System," OOPSLA (1992). The paper introduced the debt metaphor to describe deliberate shortcuts in software design.

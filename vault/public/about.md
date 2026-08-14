@@ -3,7 +3,7 @@ title: About Me
 date: 2026-08-02
 tags:
   - personal
-version: 1.0.0-beta
+version: 1.0.1-beta
 ---
 
 > [!note]- AI Usage Disclosure
@@ -16,7 +16,7 @@ This is Kiarash Azarnia. I'm a software engineer with about a decade of experien
 
 ## The early years: falling in love with the craft
 
-I started out as a Java developer building enterprise applications. Those first three years were shaped by books as much as by code. I was delighted by Martin Fowler's writing — *Patterns of Enterprise Application Architecture* above all, along with the *Fundamentals of Software Architecture* by Mark Richards and Neal Ford, and Eric Evans' *Domain-Driven Design*. And then there was Joshua Bloch's *Effective Java*, a book I genuinely loved and actually used, day after day.
+I started out as a Java developer building enterprise applications. Those first three years were shaped by books as much as by code. I was delighted by Martin Fowler's writing: *Patterns of Enterprise Application Architecture* above all, along with the *Fundamentals of Software Architecture* by Mark Richards and Neal Ford, and Eric Evans' *Domain-Driven Design*. And then there was Joshua Bloch's *Effective Java*, a book I genuinely loved and actually used, day after day.
 
 Somewhere in those years I met the **Actor Model Programming** through Scala and Akka, and with it my first real performance challenge: contributing to a big refactoring; migrating a legacy messaging core to Akka and Kafka so the platform could scale to potentially multi-million users. That project was an opportunity for me into designing and building a distributed load-testing platform on Kubernetes and the ELK stack, and I was hooked.
 
@@ -54,6 +54,6 @@ Notes and essays on engineering, career, strategy, reliability, complex systems,
 
 ## Find me!
 
-- **GitHub** — [@kiarashazarnia](https://github.com/kiarashazarnia)
-- **LinkedIn** — [kiarashazarnia](https://www.linkedin.com/in/kiarashazarnia/)
-- **Twitter** — [kiarashazarnia](https://x.com/kiarashazarnia)
+- **GitHub**: [@kiarashazarnia](https://github.com/kiarashazarnia)
+- **LinkedIn**: [kiarashazarnia](https://www.linkedin.com/in/kiarashazarnia/)
+- **Twitter**: [kiarashazarnia](https://x.com/kiarashazarnia)

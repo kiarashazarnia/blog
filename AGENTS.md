@@ -17,6 +17,14 @@ When assisting with writing, summarizing, or formatting notes, adhere to the fol
 * **Markdown Flavor:** Use strict Obsidian-flavored markdown. 
 * **Links:** Prefer Obsidian wikilinks (`[[Note Name]]`) over standard markdown links (`[Note](Note.md)`).
 * **Images:** Format images as `![[image.png]]`. 
+* **Em-dashes:** Never use em-dashes (—) in prose or headings. Rephrase with commas, colons, parentheses, or full stops.
+* **Referencing:** Four tiers, used consistently:
+  - **Framework voices**: people whose structure or ideas the post adopts or argues with. Name them in prose with an inline link on first mention; no footnote.
+  - **Studies and data**: academic-style citation. Prose states the finding (institution or report names may stay as anchors); the footnote carries authors, title, venue, year, link, caveats, and credit.
+  - **News and blog evidence**: link the claim inline; no footnote.
+  - **Inter-references**: link sections to each other with same-page heading wikilinks: `[[#Heading|display text]]`.
+  - Footnotes also carry asides: context that would interrupt the prose.
+  - "Further reading" lists only works *not* cited anywhere in the post; cited sources live in footnotes and are never duplicated there.
 * **Frontmatter:** All published notes should ideally have valid YAML frontmatter at the top.
   ```yaml
   ---
@@ -35,7 +43,7 @@ When assisting with writing, summarizing, or formatting notes, adhere to the fol
 - thinking-out-loud
 - safety-engineering
 
-* **AI Usage Disclosure:** ALWAYS add a foldable AI disclaimer callout at the TOP of every blog post you create or AI-assist on, placed right after the main heading (and subheader if present). Include a line or two describing how AI was used. It MUST be folded (collapsed) by default — note the `-` after the callout type:
+* **AI Usage Disclosure:** ALWAYS add a foldable AI disclaimer callout at the TOP of every blog post you create or AI-assist on, placed right after the main heading (and subheader if present). Include a line or two describing how AI was used. It MUST be folded (collapsed) by default: note the `-` after the callout type:
   ```markdown
   > [!note]- AI Usage Disclosure
   > One or two lines on how AI was used (e.g. polishing, grammar fixes, technical corrections).

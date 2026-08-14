@@ -9,6 +9,10 @@ version: 1.0.0-beta
 > [!note]- AI Usage Disclosure
 > AI helped me fix grammar and improve the wording of this page.
 
+![[profile.png]]
+
+*Replace `profile.png` in the vault with your own photo.*
+
 Hi there!
 This is Kiarash Azarnia. I'm a software engineer with about a decade of experience *(at the time of writing this note)*, and if there is a single thread running through everything I do, it's this: **I like to go to the roots of concepts and problems.** Not just fix what is broken, I really enjoy understanding why it broke, what shaped it, and what the system around it is really doing. This is the story of how that mindset formed.
 

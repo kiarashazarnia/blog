@@ -1,6 +1,7 @@
 ---
 title: The Root Cause!
 date: 2026-08-02
+version: 1.0.1
 ---
 
-Hi, I'm Kiarash. Here on `/root/cause`, I share my learning journey through [[tags/systems-thinking|systems thinking]], [[tags/strategy|strategy]], [[tags/safety-engineering|safety engineering]], and more! Learn more about me [[about|here]].
+Hi there, I'm Kiarash Azarnia, a software engineer focusing on infrastructure and reliability engineering. Here on `/root/cause`, I share my learning journey in [[tags/systems-thinking|systems thinking]], [[tags/strategy|strategy]], [[tags/safety-engineering|safety engineering]], and more! Read more about me [[about|here]].

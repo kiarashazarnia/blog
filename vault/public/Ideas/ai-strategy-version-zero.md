@@ -108,7 +108,7 @@ Version zero, honestly labeled. The diagnosis rests on public data I trust. The 
 
 ## Further reading
 
-These didn't shape the article directly, and I couldn't quote them cleanly, but they inspired my thinking while writing it. Shared for future learning:
+Inspired my thinking, but not directly quoted:
 
 - Geoffrey Huntley, [everything is a ralph loop](https://ghuntley.com/loop/)
 - Kent Beck, [Augmented Coding: Beyond the Vibes](https://tidyfirst.substack.com/p/augmented-coding-beyond-the-vibes)
